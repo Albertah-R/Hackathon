@@ -1,0 +1,204 @@
+/*Montsserat*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/*Questrial*/
+@import url("https://fonts.googleapis.com/css2? family= Questrial & display=swap");
+
+/*Root*/
+:root {
+  /*Couleurs*/
+  --mainColor: #fff;
+  --navBackgroundColor: rgb(255, 192, 203);
+  --text: rgb(0, 0, 0);
+  --button: rgb(255, 190, 116);
+  --buttonHover: rgb(136, 54, 13);
+  /*Typo*/
+  --xsmall: 10px;
+  --xss: 12px;
+  --petit: 14px;
+  --moyen: 18px;
+  --grand: 24px;
+  --titre: 32px;
+  --regulier: 400;
+  --gras: 600;
+  --extra: 800;
+  --italique: italic;
+}
+
+/*Typographie*/
+h1,
+h2,
+h3,
+h4,
+a {
+  color: var(--text);
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-weight: var(--extra);
+}
+a:hover {
+  color: var(--buttonHover);
+}
+h5,
+h6,
+p {
+  font-family: "Questrial", sans-serif;
+  color: var(--text);
+}
+
+/*Base*/
+
+* {
+  font-size: 100%;
+  list-style: none;
+  text-decoration: none;
+  text-decoration-style: none;
+}
+
+.btn,
+.btn-group {
+  background-color: var(--button);
+  align-items: center;
+}
+
+/*Nav*/
+
+/*Nav contact*/
+#contact {
+  background-color: var(--navBackgroundColor);
+  font-size: var(--moyen);
+  color: var(--text);
+  height: 40px;
+}
+
+.navbar-text,
+#contact a {
+  background-color: var(--navBackgroundColor);
+  height: 40px;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#contact svg {
+  background-color: var(--navBackgroundColor);
+  color: var(--text);
+}
+
+/*Navbar*/
+
+.btn {
+  border-radius: 0px;
+}
+
+.icon {
+  background-color: var(--button);
+  border: 1px solid var(--button);
+}
+
+/*Cards - les activités*/
+
+/*Cards - les partenaires*/
+
+/*Section : comment vous aider*/
+
+/*Footer*/
+
+#contact-link {
+  text-decoration: none;
+  color: var(--text);
+  line-height: 24px;
+}
+
+h6 {
+  font-weight: var(--gras);
+  color: var(--buttonHover);
+}
+
+/*Responsive*/
+
+@media (max-width: 575.98px) {
+  body {
+    background-color: lightgreen;
+  }
+  #contact {
+    visibility: hidden;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .btn-group,
+  .btn {
+    font-size: var(--xsmall);
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  body {
+    background-color: red;
+  }
+
+  #contact {
+    padding: 0px 0px 0px 0px;
+    font-size: var(--xsmall);
+    height: 30px;
+  }
+
+  .navbar-text,
+  #contact a {
+    height: 20px;
+  }
+
+  #contact svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+  #contact {
+    font-size: var(--xss);
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  body {
+    background-color: teal;
+  }
+
+  #contact {
+    font-size: var(--petit);
+  }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  body {
+    background-color: goldenrod;
+  }
+
+  .container {
+    width: 1370px;
+  }
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  body {
+    background-color: #fff;
+  }
+}
